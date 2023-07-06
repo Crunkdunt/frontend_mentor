@@ -1,0 +1,49 @@
+
+/*| VARIABLES | */
+
+:root {
+	/* | COLORS | */
+	//primary
+	--Lightred: hsl(0, 100%, 67%);
+	--Orangeyyellow: hsl(39, 100%, 56%);
+	--Greenteal: hsl(166, 100%, 37%);
+	--Cobaltblue: hsl(234, 85%, 45%);
+
+	//gradients
+	--Lightslateblue: hsl(252, 100%, 67%); //background
+	--Lightroyalblue: hsl(241, 81%, 54%); //background
+
+	--BODY-BG-GRAD: var(--Lightslateblue), var(--Lightroyalblue);
+/*CIRCLE*/
+	--Violetblue: hsla(256, 72%, 46%, 1); //circle
+	--Persianblue: hsla(241, 72%, 46%, 0); //circle
+
+	--BODY-CIRCLE-GRAD: var(--Violetblue), var(--Persianblue);
+	//neutral
+	--White: hsl(0, 0%, 100%);
+	--Paleblue: hsl(221, 100%, 96%);
+	--Lightlavender: hsl(241, 100%, 89%);
+	--Darkgrayblue: hsl(224, 30%, 27%);
+
+	/*FONTS*/
+	--FF-ALL: "Hanken Grotesk", sans-serif;
+
+	// --FONT-16-MIX: g.font-hanken-grotesk(16px, var(--Lightlavender, 500));
+
+	/* | FONT SIZES | */
+	--MOB-HEAD-BOLD: 56px;
+	--MOB-HEAD-SM: 18px;
+	--BASE-FS: 16px;
+	--BOLD-FS: 56px;
+	--HEAD-SM-FS: 16px;
+	--HEAD-FS: 24px;
+
+	//font weights
+	--EXTRABOLD-HEAD: 800;
+	--BOLD-HEAD: 700;
+	--NORMAL: 500;
+
+	//MARGINS
+	--MOB-RESULT-TB-MAR: 24px;
+	--MOB-CAPTION-TB-MAR: 8px;
+}

@@ -1,0 +1,53 @@
+/*| VARIABLES | */
+
+:root {
+    /* | COLORS | */
+
+    --DARKPURPLE: #24053E;
+    --DAVYSGREY: #584d62;
+    --EUCAPLYPTUS: #44FFA1;
+    --GHOSTWHITE: #FCF8FF;
+    --WHITE: #FFF;
+
+    
+    /*FONTS*/
+    --FF-HEADING: 'Fraunces', serif; //semibold
+    --FF-BODY: 'Manrope', sans-serif; //regular
+
+    /* | FONT SIZES | */
+
+    //Heading FS and LH
+    --F-HEADING-L: u.rem(80);
+    --F-HEADING-L-LH: u.rem(80);
+    --F-HEADING-M: u.rem(56);
+    --F-HEADING-M-LH: u.rem(64);
+    --F-HEADING-S: u.rem(32);
+    --F-HEADING-S-LH: u.rem(40);
+
+    //Body FS and LH
+    --F-BODY: u.rem(18);
+    --F-BODY-LH: u.rem(32);
+    
+
+    /*SHADOWS*/ //0.3125rem 0.3125rem 0.3125rem 0.125rem
+    --PRIMARY-SHADOW: 0.1rem 0.1rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
+
+// Dark Mode
+//     @media (prefers-color-scheme: dark) {
+//     :root {
+//         --BGCOLOR-FADE: gray;
+//         --BGCOLOR: #000;
+//         --BODY-BGCOLOR: #333;
+//         --BORDER-COLOR: whitesmoke;
+//         --BUTTON-COLOR: #000;
+//         --FONT-COLOR: whitesmoke;
+//         --HEADER-COLOR: whitesmoke;
+//         --HERO-COLOR: #333;
+//         --HIGHLIGHT-COLOR: whitesmoke;
+//         --LINK-ACTIVE: rgb(252, 200, 103);
+//         --LINK-COLOR: whitesmoke;
+//         --LINK-HOVER: orange;
+//         --NAV-BGCOLOR: rgb(20, 20, 20);
+//     }
+// }
+}

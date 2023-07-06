@@ -1,0 +1,14 @@
+@use "../global/" as g;
+@use "../util/" as u;
+
+.hero {
+	display: grid;
+	background: var(--DARKPURPLE);
+	padding: 2rem 8rem;
+
+	&__header {
+		display: grid;
+		justify-content: space-between;
+		font-style: italic;
+	}
+}

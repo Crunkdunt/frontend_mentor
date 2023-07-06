@@ -1,0 +1,53 @@
+@use '../util' as u; 
+/* | RESETS | */
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	//responsive image i think
+	display: block;
+	max-width: 100%;
+	height: 100%;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* | UTILITIES | */
+
+.offscreen {
+	//hide elements off screen but in flow
+	position: absolute;
+	left: -10000px;
+}
+
+.nowrap {
+	//stops text from wrapping
+	white-space: nowrap;
+}
+
+.center {
+	text-align: center;
+}
+
+.--fa-white {
+	color: #fff;
+}
+
