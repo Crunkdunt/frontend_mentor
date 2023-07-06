@@ -20,14 +20,28 @@ h2 {
 }
 
 .wrap {
+	display: flex;
+	place-items: center;
 	background-color: var(--Paleblue);
-	min-width: 375px;
 	max-width: 100%;
+	min-height: 100vh;
+	max-height: 100%;
+	margin-inline: auto;
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		width: 375px;
+		// margin-inline: auto;
+		background-color: white;
+			margin-inline: auto;
+
 		@include u.breakpoint(medium) {
-		background-color: #000;
-		max-width: 50%;
-		max-height:50%;
-		margin-inline: auto	;
+			// flex-direction: row;
+			flex-wrap: wrap;
+			width: 736px;
+			height: 512px;
+		}
 	}
 }
 .result {
@@ -37,10 +51,15 @@ h2 {
 	background-image: linear-gradient(var(--BODY-BG-GRAD));
 	// row-gap: 2rem;
 	padding-bottom: 40px;
-	margin-inline: auto;
+	// margin-inline: auto;
 	border-bottom-left-radius: 32px;
 	border-bottom-right-radius: 32px;
 
+	@include u.breakpoint(medium) {
+		width: 368px;
+		height: 512px;
+		border-radius:32px;
+	}
 
 	&__header {
 		@include g.font-hanken-grotesk(18px, var(--Lightlavender, 700));
@@ -125,7 +144,7 @@ h2 {
 
 			&--green {
 				@extend .summary__cards__card;
-				background-color: hsla(166, 100%, 37%, 0.278);;
+				background-color: hsla(166, 100%, 37%, 0.278);
 				& span {
 					color: hsl(166, 100%, 37%);
 					padding-left: 12px;
@@ -134,7 +153,7 @@ h2 {
 
 			&--blue {
 				@extend .summary__cards__card;
-				background-color: hsla(234, 85%, 45%,0.278);
+				background-color: hsla(234, 85%, 45%, 0.278);
 				& span {
 					color: hsl(234, 85%, 45%);
 					padding-left: 12px;
