@@ -1,60 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./dist/css/style.css">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Manrope&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./dist/css/style.css" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./dist/img/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Workit landing page</title>
-</head>
-<body>
-  <div class="hero">
-    <div class="hero__header">
-    <img src="./dist/img/logo-light.svg" alt="workit logo" class="hero__header__img">
-     <button class="hero__header__button--secondary">Apply for access</button>
-</div>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./dist/img/favicon-32x32.png"
+		/>
 
-  </div>
+		<title>Frontend Mentor | Workit landing page</title>
+	</head>
+	<body>
+		<div class="wrapper flex">
+			<div class="hero">
+				<div class="hero__header flex">
+					<div class="hero__header__logo">
+						<img src="./dist/img/logo-light.svg" alt="workit logo" />
+					</div>
+					<button class="hero__header__button--secondary">
+						Apply for access
+					</button>
+				</div>
+				<div class="hero__main">
+					<h1 class="hero__main__header">
+						Data <span class="highlight">tailored</span> to your needs.
+					</h1>
+				</div>
+				<button class="hero__main__button--primary">Learn more</button>
+				<div class="hero__main__img">
+					<img
+						src="./dist/img/image-hero.webp"
+						alt="A phone displaying charts"
+					/>
+				</div>
+			</div>
 
+			<div class="main">
+				<div class="main__cards flex">
+					<div class="main__cards__card">
+						<h2 class="main__cards__card--circleNum">1</h2>
+						<h1 class="main__cards__card--cardTitle">Actionable Insights</h1>
+						<p class="main__cards__card--cardText">
+							Optimize your products, improve customer satisfaction and stay
+							ahead of the competition with our product data analytics.
+						</p>
+					</div>
+					<div class="main__cards__card">
+						<h2 class="main__cards__card--circleNum">2</h2>
+						<h1 class="main__cards__card--cardTitle">Data-driven decisions</h1>
+						<p class="main__cards__card--cardText">
+							Make data-driven decisions with our product data analytics. Our
+							AI-generated reports help you unlock insights hidden in your
+							product data.
+						</p>
+					</div>
+					<div class="main__cards__card">
+						<h2 class="main__cards__card--circleNum">3</h2>
+						<h1 class="main__cards__card--cardTitle">Always affordable</h1>
+						<p class="main__cards__card--cardText">
+							Always affordable pricing that scales with your business. Get
+							top-quality product data analytics services without hidden costs
+							or unexpected fees.
+						</p>
+					</div>
+				</div>
+			</div>
 
+			<div class="lower">
+				<div class="lower__container">
+					<div class="lower__container__profileImg">
+						<img
+							src="./dist/img/image-founder.webp"
+							alt="Profile Picture of the Founder"
+							srcset=""
+						/>
+					</div>
+					<div class="lower__container__profileText">
+						<h1 class="--profileTitle">Be the first to test</h1>
+						<p class="--profileText">
+							Hi, I'm Louis Graham, the founder of the company. Book a demo call
+							with me to become a beta tester for our app and kickstart your
+							company. Apply for access below and I’ll be in touch to schedule a
+							call.
+						</p>
+						<button class="lower__container__button--primary">
+							Apply for access
+						</button>
+					</div>
+				</div>
+			</div>
 
-  Data tailored to your needs.
-
-  Learn more
-  
-  1
-
-  Actionable insights
-  
-  Optimize your products, improve customer satisfaction and stay ahead of the competition 
-  with our product data analytics.
-
-  2
-
-  Data-driven decisions
-
-  Make data-driven decisions with our product data analytics. Our AI-generated reports help 
-  you unlock insights hidden in your product data.
-
-  3
-
-  Always affordable
-
-  Always affordable pricing that scales with your business. Get top-quality product data 
-  analytics services without hidden costs or unexpected fees.
-
-  Be the first to test
-
-  Hi, I'm Louis Graham, the founder of the company. Book a demo call with me to become a 
-  beta tester for our app and kickstart your company. Apply for access below and I’ll be 
-  in touch to schedule a call.
-
-  Apply for access
-
-</body>
+			<div class="footer">
+				<div class="footer__logo">
+					<div class="footer__socials">
+						<img
+							src="./dist/img/icon-facebook.svg"
+							alt=""
+							class="icon baseline"
+						/><img
+							src="./dist/img/icon-instagram.svg"
+							alt=""
+							class="icon baseline"
+						/><img
+							src="./dist/img/icon-twitter.svg"
+							alt=""
+							class="icon baseline"
+						/>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

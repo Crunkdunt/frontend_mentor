@@ -1,14 +1,105 @@
 @use "../global/" as g;
 @use "../util/" as u;
 
-.hero {
-	display: grid;
-	background: var(--DARKPURPLE);
-	padding: 2rem 8rem;
+.flex {
+	display: flex;
+}
+.wrapper {
+	margin-top: 10px;
+	flex-wrap: wrap;
+	min-width: 350px;
+	width: 375px ;
+	margin-inline:auto;
+}
 
+.hero {
+	display: flex;
+	flex-wrap: wrap;
+	align-content: space-evenly;
+	justify-content: center;
+	padding-inline:16px;
+	height: 637px;
+	// background-color: var(--DARKPURPLE);
+	background-image: url(".././img/herobg.svg");
+	background-repeat: no-repeat;
 	&__header {
-		display: grid;
-		justify-content: space-between;
-		font-style: italic;
+		align-items: center;
+		gap: 110px;
+
+		&__logo {
+			width: 96px;
+			height:24px;
+		}
+
+		&__button--secondary {
+			background-color: transparent;
+			@include u.font-style(var(--FF-BODY), 16px, #fff, 700, 32px);
+			border: none;
+			border-bottom: 2px solid var(--EUCAPLYPTUS);
+			
+			&:hover{
+				color: var(--EUCAPLYPTUS );
+			}
+		}
+	}
+
+	&__main {
+		&__header {
+			@include u.font-style(var(--FF-HEADING), 40px, #fff, 600, 50px);
+			text-align: center;
+			& .highlight {
+				border-bottom: 2px solid var(--EUCAPLYPTUS);
+			}
+		}
+
+			&__button--primary {
+			@include u.font-style(var(--FF-BODY), 16px, var(--DARKPURPLE), 700, 32px);
+			background: var(--EUCAPLYPTUS);
+			width: 133px;
+			height:55px;
+			border: none;
+
+
+			&:hover {
+				
+				background: transparent;
+				color: white;
+				border-bottom: 2px solid var(--EUCAPLYPTUS);
+			}
+		}
+
+		&__img {
+		}
+	}
+}
+
+.main {
+	height: 900px;
+	margin-bottom: 100px;
+	background: no-repeat url(.././img/mainbg.svg);
+
+	&__cards{
+		@extend .main;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+
+		&__card {
+
+			&--circleNum {
+				border-radius: 50%;
+				border: solid black 2px;
+				font-size: 16px;
+
+			}
+
+			&--cardTitle {
+
+			}
+
+			&--cardText {
+
+			}
+		}
 	}
 }

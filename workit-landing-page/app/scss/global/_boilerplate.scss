@@ -1,6 +1,12 @@
-@use '../util' as u; 
+@use "../util" as u;
 /* | RESETS | */
-
+h1,
+h2,
+p,
+a {
+	padding: 0;
+	margin: 0;
+}
 html {
 	box-sizing: border-box;
 	font-size: 100%;
@@ -24,10 +30,34 @@ img {
 	height: 100%;
 }
 
+.icon {
+	display: inline-flex;
+	align-self: center;
+}
+
+.icon svg,
+.icon img {
+	height: 1em;
+	width: 1em;
+	fill: currentColor;
+}
+
+.icon.baseline svg,
+.icon img {
+	top: 0.125em;
+	position: relative;
+}
+
 ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
+}
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
 }
 
 /* | UTILITIES | */
@@ -46,8 +76,3 @@ ul {
 .center {
 	text-align: center;
 }
-
-.--fa-white {
-	color: #fff;
-}
-
