@@ -1,0 +1,22 @@
+@mixin circle-element(
+	$width: false,
+	$height: false,
+	$colour: false,
+	$thick: false
+) {
+	display: inline;
+	border-radius: 50% 50%;
+	@if $width {
+		width: $width;
+	}
+	@if $height {
+		height: $size;
+	}
+	@if $colour {
+		color: $colour;
+	}
+	@if $thick {
+		//figure this out
+	}
+	
+}

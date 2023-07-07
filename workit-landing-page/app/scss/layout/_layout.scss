@@ -5,30 +5,51 @@
 	display: flex;
 }
 .wrapper {
-	margin-top: 10px;
+	// margin-top: 10px;
 	flex-wrap: wrap;
 	min-width: 350px;
-	width: 375px ;
-	margin-inline:auto;
+	width: 100%;
+	margin-inline: auto;
+
+	@include u.breakpoint(large) {
+		// flex-direction: column;
+		// flex-wrap: nowrap;
+	}
 }
 
 .hero {
+	z-index: 1;
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
-	align-content: space-evenly;
+	align-content: space-around;
 	justify-content: center;
-	padding-inline:16px;
-	height: 637px;
-	// background-color: var(--DARKPURPLE);
-	background-image: url(".././img/herobg.svg");
-	background-repeat: no-repeat;
+	padding-inline: 16px;
+	// padding-bottom: 160px;
+	height: 620px;
+	background-color: var(--DARKPURPLE);
+	// background-image: url(".././img/herobg.svg");
+	// background-repeat: no-repeat;
+
+	@include u.breakpoint(large) {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		width: 100%;
+	}
 	&__header {
 		align-items: center;
 		gap: 110px;
 
+		@include u.breakpoint(large) {
+			width: 100%;
+	justify-content: space-around;
+
+		}
+
 		&__logo {
 			width: 96px;
-			height:24px;
+			height: 24px;
 		}
 
 		&__button--secondary {
@@ -36,9 +57,9 @@
 			@include u.font-style(var(--FF-BODY), 16px, #fff, 700, 32px);
 			border: none;
 			border-bottom: 2px solid var(--EUCAPLYPTUS);
-			
-			&:hover{
-				color: var(--EUCAPLYPTUS );
+			width: 128px;
+			&:hover {
+				color: var(--EUCAPLYPTUS);
 			}
 		}
 	}
@@ -52,54 +73,159 @@
 			}
 		}
 
-			&__button--primary {
+		&__button--primary {
 			@include u.font-style(var(--FF-BODY), 16px, var(--DARKPURPLE), 700, 32px);
 			background: var(--EUCAPLYPTUS);
 			width: 133px;
-			height:55px;
+			height: 55px;
 			border: none;
 
-
 			&:hover {
-				
 				background: transparent;
 				color: white;
-				border-bottom: 2px solid var(--EUCAPLYPTUS);
+				border: 2px solid var(--EUCAPLYPTUS);
 			}
-		}
-
-		&__img {
 		}
 	}
 }
 
 .main {
-	height: 900px;
-	margin-bottom: 100px;
-	background: no-repeat url(.././img/mainbg.svg);
+	margin-top: -100px;
+	padding-bottom: 1.5rem;
+	// margin-bottom: 20px;
 
-	&__cards{
+	// background: no-repeat url(.././img/mainbg.svg);
+	background-color: var(--GHOSTWHITE);
+
+	&__img {
+		position: relative;
+		padding-inline: 2rem;
+		// top:-100px;
+		padding-bottom: 140px;
+		z-index: 2;
+	}
+
+	&__cards {
 		@extend .main;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
 
 		&__card {
+			display: flex;
+			height: 15rem;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-evenly;
+			text-align: center;
 
 			&--circleNum {
-				border-radius: 50%;
-				border: solid black 2px;
-				font-size: 16px;
-
+				display: inline;
+				width: 40px;
+				border-radius: 50% 50%;
+				border: solid var(--DAVYSGREY) 2px;
+				@include u.font-style(
+					var(--FF-BODY),
+					20px,
+					var(--DARKPURPLE),
+					600,
+					36px
+				);
+				// align-self: center;
 			}
 
 			&--cardTitle {
-
+				@include u.font-style(
+					var(--FF-HEADING),
+					28px,
+					var(--DARKPURPLE),
+					600,
+					36px
+				);
 			}
 
 			&--cardText {
-
+				@include u.font-style(
+					var(--FF-BODY),
+					16px,
+					var(--DAVYSGREY),
+					400,
+					28px
+				);
 			}
+		}
+	}
+}
+
+.lower {
+	margin-top: 60px;
+
+	&__container {
+		padding-inline: 1rem;
+		&__profileImg {
+		}
+
+		&__profileText {
+			position: relative;
+			margin-top: -4rem;
+			padding-inline: 1.8rem;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-content: space-evenly;
+			height: 375px;
+			text-align: center;
+			background-color: var(--DARKPURPLE);
+
+			h1.--profileTitle {
+				@include u.font-style(var(--FF-HEADING), 32px, #fff, 600, 48px);
+			}
+
+			p.--profileContent {
+				@include u.font-style(var(--FF-BODY), 16px, #fff, 400, 28px);
+			}
+		}
+		&__button--primary {
+			@include u.font-style(var(--FF-BODY), 16px, var(--DARKPURPLE), 700, 32px);
+			background: var(--EUCAPLYPTUS);
+			width: 172px;
+			height: 55px;
+			border: none;
+
+			&:hover {
+				background: transparent;
+				color: white;
+				border: 2px solid var(--EUCAPLYPTUS);
+			}
+		}
+	}
+}
+
+.footer {
+	width: 100%;
+	height: 240px;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	justify-self: center;
+
+	&__container {
+		width: 116px;
+		height: 116px;
+		display: flex;
+		flex-wrap: wrap;
+		align-self: center;
+		place-content: space-evenly;
+		margin-inline: auto;
+
+		&__logo {
+		}
+
+		&__socials {
+			display: flex;
+			width: 100%;
+			justify-content: space-between;
+			// flex-wrap: wrap;
 		}
 	}
 }
