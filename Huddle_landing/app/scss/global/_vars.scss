@@ -1,0 +1,41 @@
+/*| VARIABLES | */
+
+:root {
+    /* | COLORS | */
+
+	--BACKGROUND-COLOR: hsl(0, 0%, 100%);
+    --BUTTON-BG: hsl(322, 100%, 66%);
+    --HERO-BG-COLOR: hsl(193, 100%, 96%);
+    --HERO-BG-IMG:url('../../images/bg-hero-mobile.svg');
+    --HERO-BG-IMG-LG:url('../../images/bg-hero-desktop.svg');
+    --FOOTER-BG: hsl(192, 100%, 9%);
+    --P-COLOR: hsl(209, 11%, 55%);
+    --HEADING-COLOR: hsl(0, 0%, 0%);
+    
+
+    /*FONTS*/
+    --FF-HEADING: 'Poppins', sans-serif; //weight 600
+    --FF-BODY-CTA: 'Open Sans', sans-serif; //weights 400 & 700
+
+    /*SHADOWS*/ //0.3125rem 0.3125rem 0.3125rem 0.125rem
+    --PRIMARY-SHADOW: 0.1rem 0.1rem 0.3rem 0.1rem rgba(0, 0, 0, 0.3);
+
+// Dark Mode
+//     @media (prefers-color-scheme: dark) {
+//     :root {
+//         --BGCOLOR-FADE: gray;
+//         --BGCOLOR: #000;
+//         --BODY-BGCOLOR: #333;
+//         --BORDER-COLOR: whitesmoke;
+//         --BUTTON-COLOR: #000;
+//         --FONT-COLOR: whitesmoke;
+//         --HEADER-COLOR: whitesmoke;
+//         --HERO-COLOR: #333;
+//         --HIGHLIGHT-COLOR: whitesmoke;
+//         --LINK-ACTIVE: rgb(252, 200, 103);
+//         --LINK-COLOR: whitesmoke;
+//         --LINK-HOVER: orange;
+//         --NAV-BGCOLOR: rgb(20, 20, 20);
+//     }
+// }
+}
