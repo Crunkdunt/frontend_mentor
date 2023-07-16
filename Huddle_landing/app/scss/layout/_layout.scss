@@ -267,11 +267,13 @@ button,
 	background-color: var(--FOOTER-BG);
 	color: #fff;
 	grid-template-areas:
-		"logo"
-		"contact"
-		"nav"
-		"socials"
-		"copyright";
+		"logo logo"
+		". location"
+		". tel"
+		". email"
+		". nav"
+		". socials"
+		". copyright";
 
 	@include u.breakpoint(medium) {
 		grid-template-areas:
